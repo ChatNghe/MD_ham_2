@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function check(a, b, c) {
+        if (a <= b && a <= c) return a;
+        if (b <= a && b <= c) return b;
+        if (c <= b && c <= a) return c;
+    }
+
+    let a = +prompt("Enter number a");
+    let b = +prompt("Enter number b");
+    let c = +prompt("Enter number c");
+
+    alert(check(a,b,c) + ' is smallest number');
+</script>
+</body>
+</html>

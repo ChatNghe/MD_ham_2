@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function swap(a,b) {
+    let arr=[a,b];
+    let tmp = arr[0];
+    arr[0] = arr[1];
+    arr[1] = tmp;
+    return arr;
+  }
+  let a = +prompt("Enter number a");
+  let b = +prompt("Enter number b");
+  alert(swap(a,b))
+</script>
+</body>
+</html>

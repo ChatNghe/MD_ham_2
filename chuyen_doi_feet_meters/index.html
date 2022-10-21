@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <input type="text" id="txt">
+    <select id="mySelect" >
+        <option id="1" value="1">Foot To Meter</option>
+        <option id="2" value="2">Meter To Foot</option>
+    </select>
+    <button id="btn" onclick="exchange()">change</button>
+    <p id="result"></p>
+
+<script>
+ function exchange(){
+     let input = +document.getElementById('txt').value
+     let result;
+     let x = +document.getElementById("mySelect").value;
+     if (x === 1) result = 0.305 * input;
+     else result = 3.279 * input;
+     document.getElementById('result').innerHTML = result;
+ }
+</script>
+</body>
+</html>
